@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.button-hover {
+    @apply hover:bg-gradient-to-r from-orange-500 to-pink-600 transition-colors;
+    @apply cursor-pointer;
+    @apply transition-colors;
+    @apply hover:text-white;
+}
