@@ -42,7 +42,10 @@ The project also includes async data loading from a local JSON file, duplicate p
 
 ### 1. What is JSX, and why is it used in React?
 
-JSX stands for **JavaScript XML**. It allows us to write HTML-like code directly inside JavaScript or TypeScript. React uses JSX because it makes the UI structure easier to write, read, and understand.
+JSX (JavaScript XML) is a syntax extension for JavaScript that allows us to write HTML-like code inside JavaScript. It makes React code easier to read and understand by combining the UI structure and JavaScript logic in one place.
+
+JSX is used in React because it makes creating and managing user interfaces simpler and more readable. It also allows us to use JavaScript expressions directly inside the UI using curly braces `{}`.
+
 
 ### 2. What is the difference between props and state?
 
