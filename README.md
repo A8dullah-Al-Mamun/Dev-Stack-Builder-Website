@@ -1,32 +1,68 @@
-# React + TypeScript + Vite
+# 🚀 Dev Stack — Build Your Ideal Tech Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Dev Stack is a modern and responsive web application built with **React, TypeScript, Tailwind CSS, and DaisyUI**. It allows developers to explore different technologies, create their own custom tech stack, and manage selected technologies easily.
 
-Currently, two official plugins are available:
+The project also includes async data loading from a local JSON file, duplicate prevention, responsive design, and toast notifications for better user interaction.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
 
-## React Compiler
+- **React.js + Vite** — Used for building the frontend and development environment
+- **TypeScript** — Used for type safety and better code maintainability
+- **Tailwind CSS** — Used for utility-based and responsive styling
+- **DaisyUI** — Used for ready-made UI components
+- **React-Toastify** — Used for showing toast notifications
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the Oxlint configuration
+### 1. Interactive Technology Explorer
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Browse different technologies in a responsive 3-column grid
+- See technology details such as category, difficulty level, and badges
+- Explore the available technologies through a clean and simple interface
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+### 2. Custom Tech Stack Management
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- Add technologies to your personal stack
+- Prevent duplicate technologies from being added
+- Remove individual technologies from the stack
+- Clear the complete stack with one click
+- Keep track of the selected technologies
+
+### 3. Responsive & Interactive UI
+
+- Fully responsive for mobile, tablet, and desktop devices
+- Toast notifications for add, remove, and clear actions
+- Clean light-themed user interface
+- Responsive navigation and footer
+- Simple and user-friendly interactions
+
+---
+
+## 📝 React Concept Answers
+
+### 1. What is JSX, and why is it used in React?
+
+JSX stands for **JavaScript XML**. It allows us to write HTML-like code directly inside JavaScript or TypeScript. React uses JSX because it makes the UI structure easier to write, read, and understand.
+
+### 2. What is the difference between props and state?
+
+**Props** are used to pass data from a parent component to a child component, and they are read-only. On the other hand, **state** is data managed inside a component that can change based on user actions. When the state changes, React updates the UI.
+
+### 3. What does the `useState` hook do, and where did you use it in this project?
+
+The `useState` hook is used to create and manage state in a functional component. In this project, I used it to store the technology data, manage the selected stack items, and update the UI when the stack changes.
+
+### 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
+
+`useEffect` is used to handle side effects in React, such as fetching data or working with external operations. I used it to load the `technologies.json` file when the component starts so that the technology data can be fetched and displayed.
+
+### 5. Why does every item in a `.map()` list need a unique `key` prop?
+
+React uses the `key` prop to identify each item in a list. It helps React understand which items are changed, added, or removed, so it can update the UI more efficiently.
+
+### 6. What is conditional rendering? Show one place you used it.
+
+Conditional rendering means displaying different UI elements depending on a certain condition. In this project, I used it to check whether the custom stack is empty or contains selected technologies.
+
+```tsx
+{stack.length === 0 ? <EmptyState /> : <StackList />}
