@@ -1,10 +1,12 @@
-# 🚀 Dev Stack — Build Your Ideal Tech Stack
+#  Dev Stack Build Your Ideal Tech Stack
 
 Dev Stack is a modern and responsive web application built with **React, TypeScript, Tailwind CSS, and DaisyUI**. It allows developers to explore different technologies, create their own custom tech stack, and manage selected technologies easily.
 
 The project also includes async data loading from a local JSON file, duplicate prevention, responsive design, and toast notifications for better user interaction.
 
-## 🛠️ Technologies Used
+Live Link : https://dev-stack-mamun.netlify.app/
+---
+## Technologies Used
 
 - **React.js + Vite** — Used for building the frontend and development environment
 - **TypeScript** — Used for type safety and better code maintainability
@@ -12,7 +14,7 @@ The project also includes async data loading from a local JSON file, duplicate p
 - **DaisyUI** — Used for ready-made UI components
 - **React-Toastify** — Used for showing toast notifications
 
-## ✨ Key Features
+##  Key Features
 
 ### 1. Interactive Technology Explorer
 
@@ -38,7 +40,7 @@ The project also includes async data loading from a local JSON file, duplicate p
 
 ---
 
-## 📝 React Concept Answers
+##  React Concept Answers
 
 ### 1. What is JSX, and why is it used in React?
 
